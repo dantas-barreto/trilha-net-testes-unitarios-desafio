@@ -12,10 +12,22 @@ class Program
 
 
         _lista.MultiplicarNumerosLista(lista, 4);
-        Console.WriteLine(lista);
+
+        for (int i = 0; i < lista.Count; i++)
+        {
+            Console.Write(lista[i] + " ");
+        }
+        Console.WriteLine();
+        
         Console.WriteLine(_lista.ListaContemDeterminadoNumero(lista, 6));
         _lista.RemoverNumerosNegativos(lista);
-        Console.WriteLine(lista);
+        
+        for (int i = 0; i < lista.Count; i++)
+        {
+            Console.Write(lista[i] + " ");
+        }
+        Console.WriteLine();
+        
         Console.WriteLine(_lista.RetornarMaiorNumeroLista(lista));
         Console.WriteLine(_lista.RetornarMenorNumeroLista(lista));
 
